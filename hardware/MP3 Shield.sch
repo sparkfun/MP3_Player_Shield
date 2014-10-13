@@ -2772,7 +2772,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX">
+<package name="PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
@@ -2781,16 +2781,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
 <wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.508" x2="-0.1905" y2="0.508" width="0.127" layer="51"/>
+<wire x1="-0.1905" y1="0.508" x2="-0.1905" y2="-0.508" width="0.127" layer="51"/>
+<wire x1="-0.1905" y1="-0.508" x2="1.016" y2="-0.508" width="0.127" layer="51"/>
+<wire x1="1.016" y1="-0.508" x2="1.016" y2="0.508" width="0.127" layer="51"/>
 <smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0.635" y2="0" width="0.2032" layer="1"/>
+<text x="0.0635" y="-0.4445" size="0.254" layer="51" rot="R40">PASTE</text>
+<rectangle x1="-0.2794" y1="-1.016" x2="1.4224" y2="0.9906" layer="31"/>
 </package>
 </packages>
 <symbols>
-<symbol name="PAD-JUMPER-3-2OF3-NC_BY_TRACE">
+<symbol name="PAD-JUMPER-3-2OF3-NC_BY_PASTE">
 <wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
 <wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
@@ -2805,16 +2811,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="95">
+<vertex x="-1.524" y="0.762"/>
+<vertex x="-1.524" y="-1.524" curve="90"/>
+<vertex x="0" y="-3.048" curve="90"/>
+<vertex x="1.524" y="-1.524"/>
+<vertex x="1.524" y="0.762"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="JUMPER-PAD-3-2OF3_NC_BY_TRACE" prefix="SJ">
+<deviceset name="JUMPER-PAD-3-2OF3_NC_BY_PASTE" prefix="SJ">
 <gates>
-<gate name="G$1" symbol="PAD-JUMPER-3-2OF3-NC_BY_TRACE" x="0" y="0"/>
+<gate name="G$1" symbol="PAD-JUMPER-3-2OF3-NC_BY_PASTE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX">
+<device name="" package="PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -19441,26 +19453,6 @@ Standard decoupling cap</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="3.3NF-100V-10%(0603)" prefix="C" uservalue="yes">
-<description>CAP-09633</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-09633" constant="no"/>
-<attribute name="VALUE" value="3.3nF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="47NF(0.047UF/47000PF)-25V-5%(0603)" prefix="C" uservalue="yes">
 <description>CAP-08605</description>
 <gates>
@@ -20620,23 +20612,19 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="R22" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="470"/>
 <part name="C17" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
 <part name="C18" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
-<part name="C19" library="SparkFun-Capacitors" deviceset="3.3NF-100V-10%(0603)" device="" value="3.3nF"/>
-<part name="C20" library="SparkFun-Capacitors" deviceset="3.3NF-100V-10%(0603)" device="" value="3.3nF"/>
-<part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND38" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND39" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="J1" library="SparkFun" deviceset="AVR_SPI_PRG_6" device="PTH" value="ISP/SPI"/>
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+9" library="SparkFun" deviceset="VCC" device=""/>
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="REVISION" device=""/>
-<part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value="AC Coupling L"/>
-<part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value="AC Coupling R"/>
-<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value="AC Coupling Gnd"/>
+<part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling L"/>
+<part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling R"/>
+<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling Gnd"/>
 <part name="GND29" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -20812,14 +20800,10 @@ to be compatible with Leonardo/Mega</text>
 <instance part="R22" gate="G$1" x="276.86" y="129.54" rot="R180"/>
 <instance part="C17" gate="G$1" x="294.64" y="162.56" rot="MR270"/>
 <instance part="C18" gate="G$1" x="294.64" y="129.54" rot="MR270"/>
-<instance part="C19" gate="G$1" x="284.48" y="154.94"/>
-<instance part="C20" gate="G$1" x="284.48" y="121.92"/>
-<instance part="GND30" gate="1" x="284.48" y="147.32"/>
 <instance part="GND31" gate="1" x="304.8" y="144.78"/>
 <instance part="GND32" gate="1" x="304.8" y="111.76"/>
 <instance part="GND37" gate="1" x="269.24" y="60.96" rot="MR0"/>
 <instance part="GND38" gate="1" x="269.24" y="134.62" rot="MR0"/>
-<instance part="GND39" gate="1" x="284.48" y="114.3"/>
 <instance part="GND33" gate="1" x="195.58" y="114.3"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="330.2" y="0"/>
@@ -21056,19 +21040,9 @@ to be compatible with Leonardo/Mega</text>
 <wire x1="304.8" y1="114.3" x2="304.8" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C20" gate="G$1" pin="2"/>
-<pinref part="GND39" gate="1" pin="GND"/>
-<wire x1="284.48" y1="116.84" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="304.8" y1="147.32" x2="304.8" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C19" gate="G$1" pin="2"/>
-<pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="284.48" y1="149.86" x2="284.48" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -21747,11 +21721,7 @@ to be compatible with Leonardo/Mega</text>
 <net name="N$17" class="0">
 <segment>
 <pinref part="C18" gate="G$1" pin="+"/>
-<pinref part="C20" gate="G$1" pin="1"/>
-<wire x1="292.1" y1="129.54" x2="284.48" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="129.54" x2="284.48" y2="127" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="129.54" x2="281.94" y2="129.54" width="0.1524" layer="91"/>
-<junction x="284.48" y="129.54"/>
+<wire x1="292.1" y1="129.54" x2="281.94" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -21759,11 +21729,7 @@ to be compatible with Leonardo/Mega</text>
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="C17" gate="G$1" pin="+"/>
-<wire x1="281.94" y1="162.56" x2="284.48" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="284.48" y1="162.56" x2="292.1" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="160.02" x2="284.48" y2="162.56" width="0.1524" layer="91"/>
-<junction x="284.48" y="162.56"/>
+<wire x1="281.94" y1="162.56" x2="292.1" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
