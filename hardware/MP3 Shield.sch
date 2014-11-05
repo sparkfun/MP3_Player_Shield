@@ -20622,9 +20622,9 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+9" library="SparkFun" deviceset="VCC" device=""/>
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="REVISION" device=""/>
-<part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling L"/>
+<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling L"/>
 <part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling R"/>
-<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling Gnd"/>
+<part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device="" value="AC Coupling Gnd"/>
 <part name="GND29" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -20814,9 +20814,9 @@ to be compatible with Leonardo/Mega</text>
 <instance part="GND34" gate="1" x="60.96" y="96.52"/>
 <instance part="P+9" gate="1" x="60.96" y="109.22"/>
 <instance part="U$1" gate="G$1" x="331.47" y="6.858"/>
-<instance part="SJ5" gate="G$1" x="355.6" y="152.4" rot="R180"/>
+<instance part="SJ3" gate="G$1" x="355.6" y="152.4" rot="R180"/>
 <instance part="SJ4" gate="G$1" x="355.6" y="121.92" rot="R180"/>
-<instance part="SJ3" gate="G$1" x="355.6" y="91.44" rot="R180"/>
+<instance part="SJ5" gate="G$1" x="355.6" y="91.44" rot="R180"/>
 <instance part="GND29" gate="1" x="355.6" y="81.28"/>
 </instances>
 <busses>
@@ -21057,7 +21057,7 @@ to be compatible with Leonardo/Mega</text>
 </segment>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="SJ3" gate="G$1" pin="1"/>
+<pinref part="SJ5" gate="G$1" pin="1"/>
 <wire x1="355.6" y1="83.82" x2="355.6" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -21161,7 +21161,7 @@ to be compatible with Leonardo/Mega</text>
 </segment>
 <segment>
 <label x="347.98" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ5" gate="G$1" pin="3"/>
+<pinref part="SJ3" gate="G$1" pin="3"/>
 <wire x1="355.6" y1="157.48" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="162.56" x2="347.98" y2="162.56" width="0.1524" layer="91"/>
 </segment>
@@ -21203,7 +21203,7 @@ to be compatible with Leonardo/Mega</text>
 <segment>
 <label x="350.52" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="350.52" y1="99.06" x2="355.6" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SJ3" gate="G$1" pin="3"/>
+<pinref part="SJ5" gate="G$1" pin="3"/>
 <wire x1="355.6" y1="99.06" x2="355.6" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -21713,7 +21713,7 @@ to be compatible with Leonardo/Mega</text>
 </segment>
 <segment>
 <label x="347.98" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ5" gate="G$1" pin="1"/>
+<pinref part="SJ3" gate="G$1" pin="1"/>
 <wire x1="355.6" y1="147.32" x2="355.6" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="144.78" x2="347.98" y2="144.78" width="0.1524" layer="91"/>
 </segment>
@@ -21734,7 +21734,7 @@ to be compatible with Leonardo/Mega</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="SJ3" gate="G$1" pin="2"/>
+<pinref part="SJ5" gate="G$1" pin="2"/>
 <wire x1="360.68" y1="91.44" x2="373.38" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="91.44" x2="373.38" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="SLEEVE"/>
@@ -21760,7 +21760,7 @@ to be compatible with Leonardo/Mega</text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="SJ5" gate="G$1" pin="2"/>
+<pinref part="SJ3" gate="G$1" pin="2"/>
 <wire x1="360.68" y1="152.4" x2="368.3" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="152.4" x2="368.3" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="LEFT"/>
