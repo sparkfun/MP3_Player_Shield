@@ -20649,18 +20649,19 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <text x="327.66" y="266.7" size="1.778" layer="97">Added 74HC4050 LVL Converter</text>
 <text x="325.12" y="256.54" size="1.778" layer="97">New on v1.4:</text>
 <text x="327.66" y="254" size="1.778" layer="97">Added solder jumper to select between GBUF and GND</text>
-<text x="332.74" y="190.5" size="1.778" layer="97" align="top-left">Leave at default connection for DC-coupled
-output to headphones or passive speakers.
+<text x="332.74" y="190.5" size="1.778" layer="97" align="top-left">Default configuration: solder blob between top 
+and middle pads for DC-coupled output to 
+headphones or passive speakers.
 
-Cut default and add solder blob to bottom 
-pads for AC-coupled line output.</text>
+Desolder default and add solder blob between 
+middle and bottom pads for AC-coupled line output.</text>
 <text x="327.66" y="251.46" size="1.778" layer="97">Update to Arduino R3 shield type</text>
 <text x="327.66" y="248.92" size="1.778" layer="97">Updated version code</text>
 <text x="327.66" y="246.38" size="1.778" layer="97">Added OSHW mark</text>
 <text x="327.66" y="243.84" size="1.778" layer="97">Changed all 0402 footprints to 0603 for easier optical inspection</text>
 <text x="327.66" y="241.3" size="1.778" layer="97">Added transient free line-out connection</text>
 <text x="327.66" y="238.76" size="1.778" layer="97">Added MUTE</text>
-<text x="330.2" y="193.04" size="1.778" layer="97">Solder Jumpers 3, 4, 5:</text>
+<text x="330.2" y="193.04" size="1.778" layer="97">Solder Jumpers 3, 4, 5 configure outputs:</text>
 <text x="15.24" y="243.84" size="1.778" layer="97">150mA</text>
 <text x="15.24" y="210.82" size="1.778" layer="97">150mA</text>
 <wire x1="431.8" y1="198.12" x2="243.84" y2="198.12" width="0.2032" layer="97" style="longdash"/>
@@ -20763,14 +20764,14 @@ to be compatible with Leonardo/Mega</text>
 <instance part="TP1" gate="G$1" x="101.6" y="264.16"/>
 <instance part="TP2" gate="G$1" x="66.04" y="231.14"/>
 <instance part="R13" gate="G$1" x="172.72" y="58.42"/>
-<instance part="JP1" gate="G$1" x="393.7" y="170.18" rot="R180"/>
+<instance part="JP1" gate="G$1" x="398.78" y="160.02" rot="R180"/>
 <instance part="SJ2" gate="1" x="160.02" y="58.42" smashed="yes">
 <attribute name="NAME" x="155.448" y="54.61" size="1.778" layer="95"/>
 <attribute name="VALUE" x="161.544" y="54.61" size="1.778" layer="96"/>
 </instance>
-<instance part="JP3" gate="G$1" x="393.7" y="154.94" smashed="yes" rot="MR0">
-<attribute name="NAME" x="391.16" y="160.782" size="1.778" layer="95"/>
-<attribute name="VALUE" x="387.096" y="146.304" size="1.778" layer="96"/>
+<instance part="JP3" gate="G$1" x="398.78" y="144.78" smashed="yes" rot="MR0">
+<attribute name="NAME" x="396.24" y="150.622" size="1.778" layer="95"/>
+<attribute name="VALUE" x="392.176" y="136.144" size="1.778" layer="96"/>
 </instance>
 <instance part="U6" gate="G$1" x="215.9" y="246.38"/>
 <instance part="P+10" gate="G$1" x="205.74" y="261.62"/>
@@ -20814,10 +20815,10 @@ to be compatible with Leonardo/Mega</text>
 <instance part="GND34" gate="1" x="60.96" y="96.52"/>
 <instance part="P+9" gate="1" x="60.96" y="109.22"/>
 <instance part="U$1" gate="G$1" x="331.47" y="6.858"/>
-<instance part="SJ3" gate="G$1" x="355.6" y="152.4" rot="R180"/>
-<instance part="SJ4" gate="G$1" x="355.6" y="121.92" rot="R180"/>
-<instance part="SJ5" gate="G$1" x="355.6" y="91.44" rot="R180"/>
-<instance part="GND29" gate="1" x="355.6" y="81.28"/>
+<instance part="SJ3" gate="G$1" x="360.68" y="142.24" rot="R180"/>
+<instance part="SJ4" gate="G$1" x="360.68" y="111.76" rot="R180"/>
+<instance part="SJ5" gate="G$1" x="360.68" y="81.28" rot="R180"/>
+<instance part="GND29" gate="1" x="360.68" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -21058,7 +21059,7 @@ to be compatible with Leonardo/Mega</text>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
 <pinref part="SJ5" gate="G$1" pin="1"/>
-<wire x1="355.6" y1="83.82" x2="355.6" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="73.66" x2="360.68" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -21160,10 +21161,10 @@ to be compatible with Leonardo/Mega</text>
 <junction x="269.24" y="162.56"/>
 </segment>
 <segment>
-<label x="347.98" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="353.06" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="SJ3" gate="G$1" pin="3"/>
-<wire x1="355.6" y1="157.48" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="162.56" x2="347.98" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="147.32" x2="360.68" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="152.4" x2="353.06" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RIGHT" class="0">
@@ -21182,10 +21183,10 @@ to be compatible with Leonardo/Mega</text>
 <junction x="269.24" y="129.54"/>
 </segment>
 <segment>
-<label x="347.98" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="353.06" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="SJ4" gate="G$1" pin="3"/>
-<wire x1="355.6" y1="127" x2="355.6" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="129.54" x2="347.98" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="116.84" x2="360.68" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="119.38" x2="353.06" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GBUF" class="0">
@@ -21201,10 +21202,10 @@ to be compatible with Leonardo/Mega</text>
 <label x="266.7" y="88.9" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<label x="350.52" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="350.52" y1="99.06" x2="355.6" y2="99.06" width="0.1524" layer="91"/>
+<label x="355.6" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="355.6" y1="88.9" x2="360.68" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SJ5" gate="G$1" pin="3"/>
-<wire x1="355.6" y1="99.06" x2="355.6" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="88.9" x2="360.68" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RCAP" class="0">
@@ -21695,9 +21696,9 @@ to be compatible with Leonardo/Mega</text>
 <pinref part="C18" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<label x="347.98" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="347.98" y1="114.3" x2="355.6" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="114.3" x2="355.6" y2="116.84" width="0.1524" layer="91"/>
+<label x="353.06" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="353.06" y1="104.14" x2="360.68" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="104.14" x2="360.68" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="SJ4" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -21712,10 +21713,10 @@ to be compatible with Leonardo/Mega</text>
 <label x="314.96" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="347.98" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="353.06" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="SJ3" gate="G$1" pin="1"/>
-<wire x1="355.6" y1="147.32" x2="355.6" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="144.78" x2="347.98" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="137.16" x2="360.68" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="134.62" x2="353.06" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -21735,40 +21736,40 @@ to be compatible with Leonardo/Mega</text>
 <net name="N$12" class="0">
 <segment>
 <pinref part="SJ5" gate="G$1" pin="2"/>
-<wire x1="360.68" y1="91.44" x2="373.38" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="91.44" x2="373.38" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="81.28" x2="378.46" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="81.28" x2="378.46" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="SLEEVE"/>
-<wire x1="373.38" y1="152.4" x2="373.38" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="167.64" x2="388.62" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="142.24" x2="378.46" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="157.48" x2="393.7" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="386.08" y1="152.4" x2="373.38" y2="152.4" width="0.1524" layer="91"/>
-<junction x="373.38" y="152.4"/>
+<wire x1="391.16" y1="142.24" x2="378.46" y2="142.24" width="0.1524" layer="91"/>
+<junction x="378.46" y="142.24"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="SJ4" gate="G$1" pin="2"/>
-<wire x1="360.68" y1="121.92" x2="370.84" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="121.92" x2="370.84" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="111.76" x2="375.92" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="111.76" x2="375.92" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="RIGHT"/>
-<wire x1="370.84" y1="154.94" x2="370.84" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="170.18" x2="388.62" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="144.78" x2="375.92" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="160.02" x2="393.7" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="386.08" y1="154.94" x2="370.84" y2="154.94" width="0.1524" layer="91"/>
-<junction x="370.84" y="154.94"/>
+<wire x1="391.16" y1="144.78" x2="375.92" y2="144.78" width="0.1524" layer="91"/>
+<junction x="375.92" y="144.78"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="SJ3" gate="G$1" pin="2"/>
-<wire x1="360.68" y1="152.4" x2="368.3" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="152.4" x2="368.3" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="142.24" x2="373.38" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="142.24" x2="373.38" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="LEFT"/>
-<wire x1="368.3" y1="157.48" x2="368.3" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="172.72" x2="388.62" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="147.32" x2="373.38" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="162.56" x2="393.7" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="386.08" y1="157.48" x2="368.3" y2="157.48" width="0.1524" layer="91"/>
-<junction x="368.3" y="157.48"/>
+<wire x1="391.16" y1="147.32" x2="373.38" y2="147.32" width="0.1524" layer="91"/>
+<junction x="373.38" y="147.32"/>
 </segment>
 </net>
 </nets>

@@ -153,12 +153,18 @@
 <text x="36.83" y="13.208" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-center">SJ4</text>
 <text x="36.83" y="17.653" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-center">SJ5</text>
 <text x="11.43" y="-27.94" size="1.778" layer="51" font="vector" ratio="15">Byron Jacquot</text>
-<rectangle x1="38.354" y1="6.35" x2="39.37" y2="6.858" layer="21"/>
-<rectangle x1="40.259" y1="8.128" x2="41.275" y2="8.636" layer="21"/>
-<rectangle x1="38.354" y1="7.366" x2="39.37" y2="8.636" layer="21"/>
-<rectangle x1="40.259" y1="6.35" x2="41.275" y2="7.62" layer="21"/>
-<text x="38.354" y="8.89" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-left">headphone out</text>
-<text x="40.259" y="8.89" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-left">line out</text>
+<rectangle x1="38.354" y1="7.239" x2="39.37" y2="8.509" layer="21"/>
+<text x="38.354" y="8.89" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-left">Headphone out</text>
+<text x="40.259" y="8.89" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-left">Line out</text>
+<wire x1="38.354" y1="8.509" x2="38.354" y2="6.604" width="0.2032" layer="21"/>
+<wire x1="38.354" y1="6.604" x2="39.37" y2="6.604" width="0.2032" layer="21"/>
+<wire x1="39.37" y1="6.604" x2="39.37" y2="8.509" width="0.2032" layer="21"/>
+<wire x1="39.37" y1="8.509" x2="38.354" y2="8.509" width="0.2032" layer="21"/>
+<rectangle x1="40.259" y1="6.604" x2="41.275" y2="7.874" layer="21" rot="R180"/>
+<wire x1="41.275" y1="6.604" x2="41.275" y2="8.509" width="0.2032" layer="21"/>
+<wire x1="41.275" y1="8.509" x2="40.259" y2="8.509" width="0.2032" layer="21"/>
+<wire x1="40.259" y1="8.509" x2="40.259" y2="6.604" width="0.2032" layer="21"/>
+<wire x1="40.259" y1="6.604" x2="41.275" y2="6.604" width="0.2032" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -3509,9 +3515,9 @@ design rules under a new name.</description>
 <wire x1="43.395" y1="26.585" x2="43.31" y2="26.67" width="0.254" layer="1"/>
 <wire x1="44.45" y1="13.335" x2="44.45" y2="21.59" width="0.254" layer="1"/>
 <wire x1="43.307" y1="12.192" x2="44.45" y2="13.335" width="0.254" layer="1"/>
-<wire x1="35.56" y1="12.5222" x2="38.2778" y2="12.5222" width="0.254" layer="1"/>
-<wire x1="38.2778" y1="12.5222" x2="38.608" y2="12.192" width="0.254" layer="1"/>
-<wire x1="38.608" y1="12.192" x2="43.307" y2="12.192" width="0.254" layer="1"/>
+<wire x1="35.56" y1="12.5222" x2="41.1988" y2="12.5222" width="0.254" layer="1"/>
+<wire x1="41.1988" y1="12.5222" x2="41.529" y2="12.192" width="0.254" layer="1"/>
+<wire x1="41.529" y1="12.192" x2="43.307" y2="12.192" width="0.254" layer="1"/>
 <wire x1="43.395" y1="24.13" x2="43.395" y2="22.645" width="0.254" layer="1"/>
 <wire x1="43.395" y1="22.645" x2="44.45" y2="21.59" width="0.254" layer="1"/>
 </signal>
