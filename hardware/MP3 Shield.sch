@@ -20527,7 +20527,9 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="22pF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="22PF-50V-5%(0603)" device="" value="22pF"/>
-<part name="Q1" library="SparkFun" deviceset="CRYSTAL" device="5X3" value="12.288MHz"/>
+<part name="Q1" library="SparkFun" deviceset="CRYSTAL" device="5X3" value="12.288MHz">
+<attribute name="PROD_ID" value="XTAL-09653"/>
+</part>
 <part name="R1" library="SparkFun-Resistors" deviceset="1M-1%" device="" value="1M"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="100KOHM1/10W1%(0603)" device="" value="100k"/>
@@ -20590,10 +20592,14 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="JP1" library="SparkFun-Connectors" deviceset="AUDIO-JACK" device="SMD2"/>
 <part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE" value="NC"/>
 <part name="JP3" library="SparkFun" deviceset="M03" device="PTH" value="Optional"/>
-<part name="U6" library="SparkFun" deviceset="USD-SOCKET" device="NEW" value="USD-SOCKET"/>
+<part name="U6" library="SparkFun" deviceset="USD-SOCKET" device="NEW" value="USD-SOCKET">
+<attribute name="PROD_ID" value="CONN-07820"/>
+</part>
 <part name="P+10" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
-<part name="U7" library="SparkFun-DigitalIC" deviceset="HEX_CONVERTER" device="" value="74HC4050 LVL CONVERTER"/>
+<part name="U7" library="SparkFun-DigitalIC" deviceset="HEX_CONVERTER" device="" value="74HC4050 LVL CONVERTER">
+<attribute name="PROD_ID" value="IC-09604"/>
+</part>
 <part name="P+11" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND26" library="SparkFun" deviceset="GND" device=""/>
@@ -20676,6 +20682,10 @@ to be compatible with Leonardo/Mega</text>
 <text x="327.66" y="233.68" size="1.778" layer="97">Moved to tighter SOIC FP on HEX inverter</text>
 <text x="327.66" y="231.14" size="1.778" layer="97">Touched up 3.5mm jack footprint</text>
 <text x="357.886" y="6.604" size="1.778" layer="97">Byron Jacquot</text>
+<text x="325.12" y="226.06" size="1.778" layer="97">New on v1.5:</text>
+<text x="327.66" y="223.52" size="1.778" layer="97">Removed MUTE line.</text>
+<text x="327.66" y="218.44" size="1.778" layer="97">Reworked the v1.4 DC-blocking circuit,
+ made it selectable via jumpers SJ3, SJ4, SJ5.</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="22.86" y="259.08"/>
@@ -20692,7 +20702,9 @@ to be compatible with Leonardo/Mega</text>
 <instance part="C2" gate="G$1" x="50.8" y="223.52"/>
 <instance part="C3" gate="G$1" x="53.34" y="149.86" rot="R90"/>
 <instance part="C8" gate="G$1" x="53.34" y="134.62" rot="R90"/>
-<instance part="Q1" gate="G$1" x="58.42" y="142.24" rot="R90"/>
+<instance part="Q1" gate="G$1" x="58.42" y="142.24" rot="R90">
+<attribute name="PROD_ID" x="58.42" y="142.24" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="R1" gate="G$1" x="63.5" y="142.24" rot="R90"/>
 <instance part="C9" gate="G$1" x="154.94" y="139.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="155.956" y="139.7" size="1.778" layer="95"/>
@@ -20773,12 +20785,15 @@ to be compatible with Leonardo/Mega</text>
 <attribute name="NAME" x="396.24" y="150.622" size="1.778" layer="95"/>
 <attribute name="VALUE" x="392.176" y="136.144" size="1.778" layer="96"/>
 </instance>
-<instance part="U6" gate="G$1" x="215.9" y="246.38"/>
+<instance part="U6" gate="G$1" x="215.9" y="246.38">
+<attribute name="PROD_ID" x="215.9" y="246.38" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+10" gate="G$1" x="205.74" y="261.62"/>
 <instance part="GND16" gate="1" x="205.74" y="223.52"/>
 <instance part="U7" gate="G$1" x="162.56" y="248.92" smashed="yes">
 <attribute name="NAME" x="155.194" y="259.588" size="1.778" layer="95"/>
 <attribute name="VALUE" x="134.112" y="236.22" size="1.778" layer="95"/>
+<attribute name="PROD_ID" x="162.56" y="248.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+11" gate="G$1" x="149.86" y="259.08"/>
 <instance part="GND25" gate="1" x="175.26" y="236.22"/>

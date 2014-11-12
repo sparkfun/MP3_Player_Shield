@@ -2631,7 +2631,9 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-07876" x="16.51" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" value="22pF" x="16.51" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="Q1" library="SparkFun" package="CRYSTAL-SMD-5X3" value="12.288MHz" x="16.51" y="36.83" rot="R270"/>
+<element name="Q1" library="SparkFun" package="CRYSTAL-SMD-5X3" value="12.288MHz" x="16.51" y="36.83" rot="R270">
+<attribute name="PROD_ID" value="XTAL-09653" x="16.51" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="R1" library="SparkFun-Resistors" package="0603-RES" value="1M" x="19.05" y="36.83" rot="R270">
 <attribute name="PROD_ID" value="RES-07868" x="19.05" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="1M" x="19.05" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2734,8 +2736,12 @@ design rules under a new name.</description>
 </element>
 <element name="SJ2" library="SparkFun" package="SJ_2S-TRACE" value="NC" x="13.97" y="46.99"/>
 <element name="JP3" library="SparkFun" package="1X03" value="Optional" x="35.56" y="1.27"/>
-<element name="U6" library="SparkFun" package="MICRO-SD-SOCKET-PP" value="USD-SOCKET" x="7.62" y="17.78" rot="R180"/>
-<element name="U7" library="SparkFun-DigitalIC" package="SO016" value="74HC4050 LVL CONVERTER" x="13.97" y="24.13"/>
+<element name="U6" library="SparkFun" package="MICRO-SD-SOCKET-PP" value="USD-SOCKET" x="7.62" y="17.78" rot="R180">
+<attribute name="PROD_ID" value="CONN-07820" x="7.62" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="U7" library="SparkFun-DigitalIC" package="SO016" value="74HC4050 LVL CONVERTER" x="13.97" y="24.13">
+<attribute name="PROD_ID" value="IC-09604" x="13.97" y="24.13" size="1.778" layer="27" display="off"/>
+</element>
 <element name="SJ1" library="SparkFun" package="SJ_2S-TRACE" value="NC" x="13.97" y="44.45" rot="R180"/>
 <element name="R14" library="SparkFun-Resistors" package="0603-RES" value="1K" x="17.78" y="44.45" rot="R180">
 <attribute name="PROD_ID" value="RES-07856" x="17.78" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
