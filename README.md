@@ -23,7 +23,7 @@ Documentation
 
 Product Versions
 ----------------
-* [DEV-09736] (https://www.sparkfun.com/products/retired/9736)- Version 1.0. Retired. 
+* [DEV-09736](https://www.sparkfun.com/products/retired/9736)- Version 1.0. Retired. 
 * [DEV-10628](https://www.sparkfun.com/products/retired/10628)- Version 1.3. Retired. 
 * [DEV-12660](https://www.sparkfun.com/products/12660) - Version 1.5. Current. 
 
