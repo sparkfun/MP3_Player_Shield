@@ -41,8 +41,7 @@
 #include <SPI.h>
 #include "SdFat.h" //http://librarymanager/All#SdFat_exFat by Bill Greiman. We currently use v2.1.2
 
-//const int pin_microSD_CS = 9; //Default pin for the SparkFun MP3 Shield
-const int pin_microSD_CS = 53;
+const int pin_microSD_CS = 9; //Default pin for the SparkFun MP3 Shield
 SdFat sd;
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
